@@ -27,17 +27,17 @@ describe('index.js', function() {
     });
   });
 
-  describe('distanceTravelledInFeet()', function() {
-    it('returns the distance travelled in feet', function() {
-      expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
+  describe('distanceTraveledInFeet()', function() {
+    it('returns the distance traveled in feet', function() {
+      expect(distanceTraveledInFeet(43, 48)).to.equal(1320);
     });
 
     it('returns a distance in feet', function() {
-      expect(distanceTravelledInFeet(50, 60)).to.equal(2640);
+      expect(distanceTraveledInFeet(50, 60)).to.equal(2640);
     });
 
     it('returns distance when destination is below distance', function() {
-      expect(distanceTravelledInFeet(34, 28)).to.equal(1584);
+      expect(distanceTraveledInFeet(34, 28)).to.equal(1584);
     });
   });
 
@@ -46,8 +46,8 @@ describe('index.js', function() {
       expect(calculatesFarePrice(43, 44)).to.equal(0);
     });
 
-    it('charges 2 cents per foot when total feet travelled is between 400 and 2000 (remember the first 400 feet are free!)', function() {
-      // total feet travelled is 528, minus the first 400 feet, comes to 128 -> 2.56
+    it('charges 2 cents per foot when total feet traveled is between 400 and 2000 (remember the first 400 feet are free!)', function() {
+      // total feet traveled is 528, minus the first 400 feet, comes to 128 -> 2.56
       expect(calculatesFarePrice(34, 32)).to.equal(2.56);
     });
 
